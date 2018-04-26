@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Amazon Automation Script " parallel="false">
+
+    <!--<parameter name="useCloudEnv" value="false"/>-->
+    <!--<parameter name="cloudEnvName" value="browserstack"/>-->
+    <!--<parameter name="os" value="OS X"/>-->
+    <!--<parameter name="os_version" value="Sierra"/>-->
+    <!--<parameter name="browserName" value="firefox"/>-->
+    <!--<parameter name="browserVersion" value="53.0"/>-->
+    <parameter name="url" value="https://www.amazon.com"/>
+    <parameter name="spreadSheetId" value="1XtGWMkFXUKyjSg9QkZqDJsN0UiPhMpV4L49hrNKcTks" />
+    <parameter name="dataRange" value="Amazon Book!A2:A6"/>
+
+    <test name = "Amazon Home">
+        <classes>
+            <!--<class name="pageobjectmodel.TestHomePage"/>-->
+            <!--<class name="menu.TestDropDownMenu"/>-->
+            <class name="googlesheetpage.TestGoogleSheetPage"/>
+
+        </classes>
+    </test>
+
+</suite>
